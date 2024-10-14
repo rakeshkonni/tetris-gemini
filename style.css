@@ -1,0 +1,74 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Add transition for smooth change */
+  }
+  
+  body.dark-mode {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text */
+  }
+  
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  canvas {
+    background-color: #fff;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease; /* Add transition for smooth change */
+  }
+  
+  canvas.dark-mode {
+    background-color: #222; /* Dark canvas background */
+  }
+  
+  #guide {
+    width: 200px;
+    margin-left: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transition for smooth change */
+  }
+  
+  #guide.dark-mode {
+    background-color: #444; /* Dark guide background */
+    color: #eee; /* Light guide text */
+    border-color: #555; /* Dark guide border */
+  }
+  
+  #score {
+    margin-top: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Add transition for smooth change */
+  }
+  
+  #score.dark-mode {
+    color: #eee; /* Light score text */
+  }
+  
+  #dark-mode-toggle {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth change */
+  }
+  
+  #dark-mode-toggle:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  
